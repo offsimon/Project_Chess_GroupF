@@ -1,3 +1,5 @@
+import com.sun.deploy.util.StringUtils;
+import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -42,17 +44,26 @@ public class ChessboardController {
     public ImageView bishopWhite2;
     public ImageView queenWhite;
     public ImageView kingWhite;
+    public Rectangle r6c0;
 
     private boolean isPressed = false;
-    private Node pressed = null;
+    private ImageView pressed = null;
+    private Rectangle pressedRec = null;
 
     public void selectFigure(MouseEvent mouseEvent) {
+
         if (pressed == mouseEvent.getSource() && isPressed) {
+            String name = pressed.getId().replaceAll(".$", "");
+            pressed.setImage(new Image("/Resources/" + name +".png"));
             pressed = null;
             isPressed = false;
         } else {
             pressed = (ImageView) mouseEvent.getSource();
             isPressed = true;
+            String name = pressed.getId().replaceAll(".$", "");
+            name += "Selected";
+            pressed.setImage(new Image("/Resources/"+ name +".png"));
+
         }
 
     }
@@ -71,9 +82,25 @@ public class ChessboardController {
 
             GridPane.setRowIndex(pressed, row);
             GridPane.setColumnIndex(pressed, column);
+            String name = pressed.getId().replaceAll(".$", "");
+            pressed.setImage(new Image("/Resources/" + name +".png"));
 
             isPressed = false;
             pressed = null;
         }
     }
+
+    /*public Node getNodeByRowColumnIndex (final int row, final int column, GridPane gridPane) {
+        Node result = null;
+        ObservableList<Node> childrens = gridPane.getChildren();
+
+        for (Node node : childrens) {
+            if(gridPane.getRowIndex(node) == row && gridPane.getColumnIndex(node) == column) {
+                result = node;
+                break;
+            }
+        }
+
+        return result;
+    }*/
 }

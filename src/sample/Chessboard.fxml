@@ -79,7 +79,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="WHITE" strokeType="INSIDE" width="75.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#789454" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="#789454" strokeType="INSIDE" width="75.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="WHITE" strokeType="INSIDE" width="75.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="WHITE" strokeType="INSIDE" width="75.0" GridPane.rowIndex="6" />
+            <Rectangle fx:id="r6c0" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="WHITE" strokeType="INSIDE" width="75.0" GridPane.rowIndex="6" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#789454" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="#789454" strokeType="INSIDE" width="75.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="WHITE" strokeType="INSIDE" width="75.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#789454" height="75.0" layoutX="10.0" layoutY="-52.0" onMouseClicked="#moveFigure" stroke="#789454" strokeType="INSIDE" width="75.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
@@ -165,12 +165,12 @@
                   <Image url="@../Resources/bishopBlack.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="queenBlack" fitHeight="75.0" fitWidth="75.0" layoutX="160.0" layoutY="10.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+            <ImageView fx:id="queenBlack1" fitHeight="75.0" fitWidth="75.0" layoutX="160.0" layoutY="10.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
                <image>
                   <Image url="@../Resources/queenBlack.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="kingBlack" fitHeight="75.0" fitWidth="75.0" layoutX="235.0" layoutY="10.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+            <ImageView fx:id="kingBlack1" fitHeight="75.0" fitWidth="75.0" layoutX="235.0" layoutY="10.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                <image>
                   <Image url="@../Resources/kingBlack.png" />
                </image>
@@ -245,12 +245,12 @@
                   <Image url="@../Resources/bishopWhite.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="queenWhite" fitHeight="75.0" fitWidth="75.0" layoutX="160.0" layoutY="535.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+            <ImageView fx:id="queenWhite1" fitHeight="75.0" fitWidth="75.0" layoutX="160.0" layoutY="535.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
                <image>
                   <Image url="@../Resources/queenWhite.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="kingWhite" fitHeight="75.0" fitWidth="75.0" layoutX="235.0" layoutY="535.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+            <ImageView fx:id="kingWhite1" fitHeight="75.0" fitWidth="75.0" layoutX="235.0" layoutY="535.0" onMouseClicked="#selectFigure" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
                <image>
                   <Image url="@../Resources/kingWhite.png" />
                </image>
